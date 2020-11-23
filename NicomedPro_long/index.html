@@ -15,9 +15,9 @@
         var month = (a / 20)*h;
         var year = (a / 20)*h;
         var fiveYears = (a / 20)*h;
-        obj.month.value = Math.round( month * 30);
-        obj.year.value = Math.round (year * 255);
-        obj.fiveYears.value =  Math.round (fiveYears * 1275);
+        obj.month.value = Math.ceil( month * 30);
+        obj.year.value = Math.ceil (year * 255);
+        obj.fiveYears.value =  Math.ceil (fiveYears * 1275);
         }
     </script>
 

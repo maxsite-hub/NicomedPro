@@ -12,12 +12,13 @@
         var a = obj.st1.value;
         var h = obj.st2.value;
         
-        var month = (a / 20)*h;
-        var year = (a / 20)*h;
-        var fiveYears = (a / 20)*h;
-        obj.month.value = Math.ceil( month * 30);
-        obj.year.value = Math.ceil (year * 255);
-        obj.fiveYears.value =  Math.ceil (fiveYears * 1275);
+        var total = ((a*365)/20)*h*1;
+        var month;
+        var year;
+        var fiveYears;
+        obj.month.value =  Math.round(total / 12)*3;
+        obj.year.value =  Math.round(total / 1);
+        obj.fiveYears.value =  Math.round(total)*5;
         }
     </script>
 
